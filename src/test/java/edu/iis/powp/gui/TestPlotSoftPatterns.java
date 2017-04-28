@@ -16,7 +16,9 @@ import edu.iis.powp.appext.ApplicationWithDrawer;
 import edu.iis.powp.command.Factory;
 import edu.iis.powp.events.predefine.SelectChangeVisibleOptionListener;
 import edu.iis.powp.events.predefine.SelectNewTestFigureOptionListener;
+import edu.iis.powp.events.predefine.SelectRectangleOptionListener;
 import edu.iis.powp.events.predefine.SelectTestFigureOptionListener;
+import edu.iis.powp.events.predefine.SelectTriangleOptionListener;
 import edu.kis.powp.drawer.panel.DefaultDrawerFrame;
 import edu.kis.powp.drawer.panel.DrawPanelController;
 import edu.kis.powp.drawer.shape.LineFactory;
@@ -34,9 +36,13 @@ public class TestPlotSoftPatterns
 	private static void setupPresetTests(Context context) {
 	    SelectTestFigureOptionListener selectTestFigureOptionListener = new SelectTestFigureOptionListener();
 	    SelectNewTestFigureOptionListener selectNewTestFigureOptionListener = new SelectNewTestFigureOptionListener();
+	    SelectRectangleOptionListener selectRectangleOptionListener = new SelectRectangleOptionListener();
+	    SelectTriangleOptionListener selectTriangleOptionListener = new SelectTriangleOptionListener();
 		
 		context.addTest("Figure Joe 1", selectTestFigureOptionListener);
 		context.addTest("Figure Joe 2", selectNewTestFigureOptionListener);
+		context.addTest("Rectangle", selectRectangleOptionListener);
+		context.addTest("Triangle", selectTriangleOptionListener);
 	}
 
 	/**

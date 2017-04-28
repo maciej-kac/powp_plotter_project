@@ -15,7 +15,7 @@ public class TestRectangle {
 		DrawPanelController controller = new DrawPanelController();
 		DefaultDrawerFrame.getDefaultDrawerFrame().setVisible(true);
 		IPlotter plotter = new LinePlotterAdapter(controller, LineFactory.getBasicLine());
-		PlotterCommand plotterCommand = Factory.getRectangle(-20, -20, 40, 50);
+		PlotterCommand plotterCommand = Factory.getRectangle(-40, -40, 40, 50);
 		plotterCommand.execute(plotter);
 	}
 }

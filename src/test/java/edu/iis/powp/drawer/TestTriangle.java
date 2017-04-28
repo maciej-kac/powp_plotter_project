@@ -15,7 +15,7 @@ public class TestTriangle {
 		DrawPanelController controller = new DrawPanelController();
 		DefaultDrawerFrame.getDefaultDrawerFrame().setVisible(true);
 		IPlotter plotter = new LinePlotterAdapter(controller, LineFactory.getBasicLine());
-		PlotterCommand plotterCommand = Factory.getTriangle(-20, -20, 0, 0, -20, 10);
+		PlotterCommand plotterCommand = Factory.getTriangle(-40, -40, -40, 0, 0, 0);
 		plotterCommand.execute(plotter);
 	}
 }
